@@ -2,9 +2,9 @@ module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
     fontFamily: {
-      primary: 'Orbitron',
-      secondary: 'Rajdhani',
-      tertiary: 'Aldrich',
+      primary: 'Calibri',
+      secondary: 'Arial',
+      tertiary: 'Calibri',
     },
     container: {
       padding: {
@@ -23,7 +23,8 @@ module.exports = {
         accent: '#B809C3',
       },
       backgroundImage: {
-        site: "url('./assets/site-bg.jpg')",
+        site: "url('./assets/bg.jpg')",
+        banner: "url('./assets/banner-bg.jpg')",
         about: "url('./assets/about.png')",
         services: "url('./assets/services.png')",
       },
