@@ -4,13 +4,13 @@ import { motion } from "framer-motion";
 // variants
 import { fadeIn } from "../variants";
 // import images
-import Img1 from "../assets/portfolio-img1.png";
-import Img2 from "../assets/portfolio-img2.png";
-import Img3 from "../assets/portfolio-img3.png";
+// import Img1 from "../assets/portfolio-img1.png";
+// import Img2 from "../assets/portfolio-img2.png";
+// import Img3 from "../assets/portfolio-img3.png";
 
 const Work = () => {
   return (
-    <section className="section" id="work">
+    <section className="section p-4" id="work">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row gap-x-10 lg:mt-16">
           <motion.div
@@ -22,7 +22,7 @@ const Work = () => {
           >
             {/* text */}
             <div className="">
-              <h2 className="h2 leading-tight text-accent">
+              <h2 className="h2 font-bold leading-tight text-accent">
                 My <br /> Webinars
               </h2>
               <p className="max-w-sm mb-10">
@@ -42,7 +42,7 @@ const Work = () => {
           >
             <div className="block">
               <iframe
-               className="w-[320px] lg:w-[640px] lg:h-[320px] mb-4"
+               className="w-[370px] h-[200px] lg:w-[640px] lg:h-[320px] mb-4"
                 src="https://www.youtube.com/embed/gGGmnMo6ex0"
                 title="THESE 10 HACKS​​ WILL ​​MAKE ​​YOUR ​​STATEMENT OF PURPOSE ​​A​​ BANGER!​"
                 frameborder="0"
@@ -51,7 +51,7 @@ const Work = () => {
               ></iframe>
 
               <iframe
-                className="w-[320px] lg:w-[640px] lg:h-[320px]"
+                className="w-[370px] h-[200px] lg:w-[640px] lg:h-[320px]"
                 src="https://www.youtube.com/embed/gGGmnMo6ex0"
                 title="THESE 10 HACKS​​ WILL ​​MAKE ​​YOUR ​​STATEMENT OF PURPOSE ​​A​​ BANGER!​"
                 frameborder="0"
@@ -59,6 +59,7 @@ const Work = () => {
                 allowfullscreen
               ></iframe>
             </div>
+            
           </motion.div>
         </div>
       </div>

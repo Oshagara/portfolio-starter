@@ -37,7 +37,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="section" id="services">
+    <section className="section p-4" id="services">
       <div className="container mx-auto">
         <div className="flex flex-col lg:flex-row lg:mt-16">
           {/* text and images */}
@@ -46,12 +46,13 @@ const Services = () => {
           initial='hidden'
           whileInView={'show'}
           viewport={{once: false, amount: 0.3}}
-          className="flex-1 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
-            <h2 className="h2 text-accent mb-6">What I Do.</h2>
-            <h3 className="h3 mb-12 text-xl font-medium max-w-[455px]">
+          className="flex-1 pl-4 lg:bg-services lg:bg-bottom bg-no-repeat mix-blend-lighten mb-12 lg:mb-0">
+            <h2 className="h2 font-bold text-accent mb-6">What I Do</h2>
+            <h3 className="h3 mb-12 text-lg font-medium max-w-[455px] text-justify leading-6">
             I am also a BBIP/IDH Scholar, a prestigious program that supports and mentors scholars of color in digital humanities.
             </h3>
-            <button className="btn btn-sm">See my work</button>
+            <button className="btn btn-sm">
+              <a href="https://www.linkedin.com/in/abisolaakinsiku/">See my work</a></button>
           </motion.div>
           {/* services */}
           <motion.div
@@ -65,15 +66,15 @@ const Services = () => {
               {
                 services.map((service, index) => {
                   // destructure data
-                  const {name, description, link} = service;
+                  const {name, description} = service;
                   return (
                     <div className="border-b max-w-[476px]  border-white/20 h-[150px] p-4 mb-[16px] flex" key={index}>
-                      <div className="border-l-4 mt-0 leading-7 pl-2 my-2">
+                      <div className="border-l-4 border-double border-[#ff56f6] mt-0 leading-7 pl-2 my-2">
                         <h4 className="pt-0 text-[18px] tracking-wider font-primary font-semibold mb-2">{name}</h4>
                         <p className="font-primary text-gray-600 text-[14px] text-justify leading-5">{description}</p>
                       </div>
                       <div className="flex flex-col flex-1 items-end">
-                        <a href="#" className="btn w-6 h-6 mb-[42px] flex justify-center items-center"> <BsArrowUpRight/> </a>
+                        <a href="https://www.linkedin.com/in/abisolaakinsiku/" className="btn w-6 h-6 mb-[4px] flex justify-center items-center"> <BsArrowUpRight/> </a>
                       </div>
                     </div>
                   )

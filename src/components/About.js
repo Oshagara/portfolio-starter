@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 import React from "react";
 // countUp
-import CountUp from "react-countup";
+// import CountUp from "react-countup";
 // intersection observer hook
 import { useInView } from "react-intersection-observer";
 // motion
@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../variants";
 
 const About = () => {
-  const [ref, inView] = useInView({
+  const [ref] = useInView({
     threshold: 0.5,
   });
   return (
@@ -24,7 +24,7 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="flex bg-about bg-contain bg-no-repeat lg:w-[640px] lg:h-[640px] h-[200px] mix-blend-lighten bg-top"
+              className="flex bg-about bg-contain bg-no-repeat lg:w-[640px] lg:h-[640px] h-[300px] mix-blend-lighten bg-top"
             ></motion.div>
           </div>
           {/* text */}
@@ -36,10 +36,10 @@ const About = () => {
           >
             <div className="flex-1 p-4 mt-[-100px]">
               <h2 className="h2 font-bold text-[#cf39c8]">About Me</h2>
-              <h3 className="h3 mb-4 text-gray-600 text-sm">
+              <h3 className="h3 font-medium italic mt-0 text-gray-400 text-sm">
               I’m a Doctoral student and educator living in Lawrence, Kansas.
               </h3>
-              <p className="mb-4 text-sm tracking-wide text-justify font-light">
+              <p className="mb-4 text-sm tracking-wide text-justify leading-7 font-light">
                 I’m very passionate about providing useful information for young
                 minds to achieve their educational dreams. Recently, I organized
                 a free webinar for international students who love to study
@@ -84,8 +84,9 @@ const About = () => {
               </div>
             </div> */}
             <div className="flex p-4 gap-x-8 text-xs items-center">
-              <button className="btn btn-sm">Contact me</button>
-              <a href="#" className="text-gradient btn-link">
+              <button className="btn btn-sm">
+                <a href="mailto:abisolaadesanya2015@gmail.com">Contact me </a></button>
+              <a href="https://www.linkedin.com/in/abisolaakinsiku/" className="text-gradient btn-link">
                 My Portfolio
               </a>
             </div>
