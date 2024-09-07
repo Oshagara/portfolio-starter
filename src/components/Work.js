@@ -25,7 +25,7 @@ const Work = () => {
               <h2 className="h2 font-bold leading-tight text-accent">
                 My <br /> Webinars
               </h2>
-              <p className="max-w-sm mb-10">
+              <p className="max-w-auto mb-10 text-justify">
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint,
                 veniam enim ad repudiandae odio recusandae accusantium totam
                 dolorem harum eum.
@@ -42,7 +42,7 @@ const Work = () => {
           >
             <div className="block">
               <iframe
-               className="w-[370px] h-[200px] lg:w-[640px] lg:h-[320px] mb-4"
+               className="min-w-[370px] justify-center p-auto sm:w-[500px] sm:h-[300px] h-[200px] lg:w-[640px] lg:h-[320px] mb-4"
                 src="https://www.youtube.com/embed/gGGmnMo6ex0"
                 title="THESE 10 HACKS​​ WILL ​​MAKE ​​YOUR ​​STATEMENT OF PURPOSE ​​A​​ BANGER!​"
                 frameborder="0"
@@ -51,7 +51,7 @@ const Work = () => {
               ></iframe>
 
               <iframe
-                className="w-[370px] h-[200px] lg:w-[640px] lg:h-[320px]"
+                className="w-[370px] sm:w-[500px] sm:h-[300px] h-[200px] lg:w-[640px] lg:h-[320px]"
                 src="https://www.youtube.com/embed/gGGmnMo6ex0"
                 title="THESE 10 HACKS​​ WILL ​​MAKE ​​YOUR ​​STATEMENT OF PURPOSE ​​A​​ BANGER!​"
                 frameborder="0"
