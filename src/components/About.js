@@ -11,12 +11,12 @@ import { fadeIn } from "../variants";
 
 const About = () => {
   const [ref] = useInView({
-    threshold: 0.5,
+    threshold: 0.6,
   });
   return (
-    <section className="section" id="about" ref={ref}>
-      <div className="container mx-auto">
-        <div className="flex flex-col lg:flex-row gap-y-10 lg:items-center lg:gap-x-20 lg:gap-y-0">
+    <section className="bg-site2 bg-cover bg-no-repeat" id="about" ref={ref}>
+      <div className="mx-auto bg-[#09152b] bg-opacity-95">
+        <div className="lg:p-24 p-12 flex flex-col lg:flex-row lg:items-center lg:gap-x-20 h-full">
           {/* img */}
           <div>
             <motion.div
@@ -24,31 +24,30 @@ const About = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.3 }}
-              className="flex bg-about bg-contain bg-no-repeat lg:w-[640px] lg:h-[640px] h-[300px] mix-blend-lighten bg-top"
-            ></motion.div>
+              className="flex bg-about w-5/6 bg-cover rounded-full border border-l-slate-600 bg-no-repeat lg:w-[100px] lg:h-[250px] h-[200px] mix-blend-lighten bg-top"
+            >
+            </motion.div>
           </div>
           {/* text */}
           <motion.div
             variants={fadeIn("left", 0.3)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.3 }}
+            viewport={{ once: false, amount: 0.3}}
           >
-            <div className="flex-1 p-4 mt-[-100px]">
-              <h2 className="h2 font-bold text-[#cf39c8]">About Me</h2>
-              <h3 className="h3 font-medium italic mt-0 text-gray-400 text-sm">
-              I’m a Doctoral student and educator living in Lawrence, Kansas.
-              </h3>
-              <p className="mb-4 text-sm tracking-wide text-justify leading-7 font-light">
-                I’m very passionate about providing useful information for young
-                minds to achieve their educational dreams. Recently, I organized
-                a free webinar for international students who love to study
-                abroad, especially in the United States. With over 300
-                registered, we were able to provide useful information that'll
-                help them achieve their educational dreams without the
-                paralyzing thought of funding. I am organizing a free statement
-                of purpose workshop in September. You can attend my event with a
-                click on the button above.
+            <div className="flex-1 bg-opacity-80 lg:p-4 mt-4 lg:mt-[-100px]">
+             <div className="text-2xl lg:text-4xl font-tertiary text-gradient mb-4">
+             <p className="bg-gray-200/10 text-sm rounded-full max-w-fit px-2 my-2 text-green-500">About Me</p>
+              <p className="font-secondary font-extralight mt-0 text-red-300 lg:text-lg text-sm">
+                Technologist || Web Developer| cybersecurity Analyst|| Lagos Nigeria
+              </p>
+             </div>
+              <p className="mb-4 lg:text-lg lg:leading-8 text-sm text-white tracking-wide text-justify leading-7 font-light">
+                I am Israel Oshagara, a web developer and
+                cybersecurity analyst with a strong passion for blending creativity and
+                security in the realm of technology, across the Globe. I thrive on building dynamic, user-friendly websites
+                and applications while ensuring that the solutions I develop are
+                safeguarded against modern-day cyber threats.
               </p>
             </div>
             {/* stats
@@ -83,13 +82,6 @@ const About = () => {
                 </div>
               </div>
             </div> */}
-            <div className="flex p-4 gap-x-8 text-xs items-center">
-              <button className="btn btn-sm">
-                <a href="mailto:abisolaadesanya2015@gmail.com">Contact me </a></button>
-              <a href="https://www.linkedin.com/in/abisolaakinsiku/" className="text-gradient btn-link">
-                My Portfolio
-              </a>
-            </div>
           </motion.div>
         </div>
       </div>

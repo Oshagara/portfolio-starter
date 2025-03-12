@@ -3,7 +3,7 @@ module.exports = {
   theme: {
     fontFamily: {
       primary: 'Calibri',
-      secondary: 'Arial',
+      secondary: 'Poppins',
       tertiary: 'Calibri',
     },
     container: {
@@ -24,9 +24,17 @@ module.exports = {
       },
       backgroundImage: {
         site: "url('./assets/bg.jpg')",
+        site2: "url('./assets/Pattern.gif')",
         banner: "url('./assets/banner-bg.jpg')",
-        about: "url('./assets/about.png')",
+        about: "url('./assets/profile.png')",
         services: "url('./assets/services.png')",
+        skill1: "url('./assets/skill1.png')",
+        skill2: "url('./assets/skill2.png')",
+        skill3: "url('./assets/skill3.png')",
+        skill4: "url('./assets/skill4.png')",
+        skill5: "url('./assets/skill5.png')",
+        skill6: "url('./assets/skill6.png')",
+        skill7: "url('./assets/skill7.png')",
       },
     },
   },
